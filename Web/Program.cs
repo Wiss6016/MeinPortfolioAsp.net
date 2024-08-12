@@ -1,4 +1,6 @@
+using Core.Interfaces;
 using Infrastructure;
+using Infrastructure.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -9,6 +11,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DataContext>(optioin =>
 
  optioin.UseSqlServer(builder.Configuration.GetConnectionString("MeinPortfolioDb")));
+builder.Services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
 
 var app = builder.Build();
 

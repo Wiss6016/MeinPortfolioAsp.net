@@ -70,7 +70,7 @@ namespace Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("e6a7481f-00e8-495d-8c1a-4e9b13399d4e"),
+                            Id = new Guid("2188b73c-33ae-459f-98ff-bf65fe58ffdc"),
                             Avatar = "avatar.jpg",
                             FullName = "Wissem Hmidi",
                             Profil = "Software Developer in C#"
@@ -96,6 +96,36 @@ namespace Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("PortfolioItems");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("620fffd2-3b41-4769-ac38-eaf339435438"),
+                            Description = "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum magnis justo primis ligula facilisi non torquent pulvinar. Tellus tortor morbi ullamcorper sagittis proin quam. Parturient Lacinia blandit rutrum; turpis elit taciti dignissim suspendisse. Quis gravida curae, tellus vulputate urna venenatis. Nisl viverra curabitur a pretium suscipit.",
+                            ImageUrl = "cake.png",
+                            ProjectName = "Project Alpha"
+                        },
+                        new
+                        {
+                            Id = new Guid("38c8d58e-fc07-449b-9298-5bd4ded8bc60"),
+                            Description = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                            ImageUrl = "circus.png",
+                            ProjectName = "Project Beta"
+                        },
+                        new
+                        {
+                            Id = new Guid("34b34fbf-4e4e-42b1-ab71-f4915e2ebe84"),
+                            Description = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+                            ImageUrl = "safe.png",
+                            ProjectName = "Project Gamma"
+                        },
+                        new
+                        {
+                            Id = new Guid("f876025d-db45-40f5-bf1b-66cc63b46334"),
+                            Description = "Curabitur gravida arcu ac tortor dignissim convallis. Aenean et tortor at risus viverra adipiscing at in tellus.",
+                            ImageUrl = "submarine.png",
+                            ProjectName = "Project Delta"
+                        });
                 });
 
             modelBuilder.Entity("Core.Entities.Owner", b =>
