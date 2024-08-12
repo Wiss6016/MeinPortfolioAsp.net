@@ -1,6 +1,6 @@
 ﻿namespace Core.Entities
 {
-    internal class PortfolioItem : EntityBase
+    public class PortfolioItem : EntityBase
     {
         public string? ProjectName { get; set; }
         public string? Description { get; set; }
